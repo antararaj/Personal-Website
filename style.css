@@ -3,29 +3,42 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom right, #f0f4ff, #dbeafe);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 100vh;
+  padding: 2rem;
   color: #333;
 }
 
 .container {
-  text-align: center;
-  padding: 2rem;
   background: white;
+  padding: 1.5rem 2rem;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.content {
+  display: flex;
+  align-items: center;
 }
 
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin-left: 1.5rem;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.links {
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 .links a {
@@ -38,5 +51,15 @@ p {
 }
 
 .links a:hover {
-  border-color: #413ac2;
+  border-color: #4f46e5;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
